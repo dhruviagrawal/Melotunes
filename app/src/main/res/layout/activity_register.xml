@@ -40,7 +40,7 @@
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:text="Enter your phone number"
+            android:hint="Enter your phone number"
             android:textSize="24sp" />
 
         <EditText
@@ -52,7 +52,7 @@
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:text="Enter your name"
+            android:hint="Enter your name"
             android:textSize="24sp" />
 
         <EditText
@@ -64,7 +64,7 @@
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:text="Enter Password"
+            android:hint="Enter Password"
             android:textSize="24sp" />
 
         <Button
