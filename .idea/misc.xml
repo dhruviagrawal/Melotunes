@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_home.xml" value="0.176" />
+        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_login.xml" value="0.20516304347826086" />
         <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_main.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_music.xml" value="0.20516304347826086" />
         <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_register.xml" value="0.12" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2246376811594203" />
       </map>
     </option>

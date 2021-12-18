@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Melotunes</string>
+    <string name="Login">Login</string>
+    <string name="phone">Enter your phone number</string>
+    <string name="password">Enter Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="name">Enter your name</string>
+    <string name="register">Register</string>
 </resources>
