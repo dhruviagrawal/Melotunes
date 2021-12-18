@@ -34,6 +34,7 @@
         <EditText
             android:id="@+id/register_phoneno"
             android:layout_width="match_parent"
+            android:maxLength="10"
             android:layout_height="101dp"
             android:layout_marginBottom="30sp"
             android:backgroundTint="#9C27B0"
@@ -63,9 +64,9 @@
             android:backgroundTint="#9C27B0"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
             android:hint="Enter Password"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:inputType="textPassword"/>
 
         <Button
             android:id="@+id/register"

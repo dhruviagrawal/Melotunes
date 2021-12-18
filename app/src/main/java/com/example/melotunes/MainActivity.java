@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                 }
             }
-        }; thread.start();
+        };
+        thread.start();
     }
 } 

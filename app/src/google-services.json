@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "106314546722",
+    "project_id": "melotunes-91935",
+    "storage_bucket": "melotunes-91935.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106314546722:android:9709f95db05d135d97147b",
+        "android_client_info": {
+          "package_name": "com.example.melotunes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106314546722-qe54kgu7ihvit565mjb8j5cn9lrvl02j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFZyEsAPH5XAaQhyT9UzJ-GfcSfmNyYE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106314546722-qe54kgu7ihvit565mjb8j5cn9lrvl02j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
