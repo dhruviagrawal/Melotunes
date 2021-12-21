@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -15,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         relLayout= findViewById(R.id.relLayout);
-        Intent i=new Intent(MainActivity.this,HomeActivity.class);
+        Intent intent=new Intent(MainActivity.this,HomeActivity.class);
         Thread thread = new Thread()
         {
             @Override
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 finally{
-                    startActivity(i);
+                    startActivity(intent);
                     finish();
                 }
             }
