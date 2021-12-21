@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Melotunes">
         <activity
+            android:name=".OnlineLibrary"
+            android:exported="false" />
+        <activity
+            android:name=".OfflineLibrary"
+            android:exported="false" />
+        <activity
             android:name=".Music"
             android:exported="false" />
         <activity
