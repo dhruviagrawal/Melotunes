@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run(){
                 try{
-                    sleep(5000);//sleep for 5 second
+                    sleep(5000);//sleep the splash screen for 5 seconds 
                 }
                 catch (InterruptedException e)
                 {
