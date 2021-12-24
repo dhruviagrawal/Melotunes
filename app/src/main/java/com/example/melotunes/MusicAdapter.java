@@ -52,9 +52,11 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MyViewHolder
                         .into(holder.album_art);
            }
            holder.itemView.setOnClickListener(new View.OnClickListener() {
+               //on clicking any song, it should be played in Player Activity
                @Override
                public void onClick(View view) {
                    Intent intent = new Intent(mContext, PlayerActivity.class);
+                   intent.putExtra("position", position);
                    mContext.startActivity(intent);
                }
            });
