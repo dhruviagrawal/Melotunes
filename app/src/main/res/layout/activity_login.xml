@@ -7,13 +7,14 @@
     tools:context=".LoginActivity">
 
     <ScrollView
+        android:background="@drawable/main_bg"
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,24 +30,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_marginBottom="30sp"
-                android:background="#ADABE8"
                 android:gravity="center"
                 android:text="@string/Login"
-                android:textColor="#121111"
-                android:textSize="48sp"
+                android:textColor="@color/teal_200"
+                android:textSize="50sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/login_phoneno"
                 android:layout_width="match_parent"
-                android:maxLength="10"
                 android:layout_height="101dp"
                 android:layout_marginBottom="30sp"
                 android:backgroundTint="#9C27B0"
                 android:ems="10"
+
                 android:gravity="center"
-                android:inputType="textPersonName"
                 android:hint="@string/phone"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:textColor="@color/white"
+                android:textColorHint="#BDB4B4"
                 android:textSize="24sp" />
 
 
@@ -54,13 +57,15 @@
                 android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="86dp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="70sp"
                 android:backgroundTint="#9C27B0"
                 android:ems="10"
                 android:gravity="center"
                 android:hint="@string/password"
-                android:textSize="24sp"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="#BDB4B4"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/login"
@@ -69,6 +74,8 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/Login"
+                android:textColor="@color/black"
+                android:background="@color/teal_200"
                 android:textSize="34sp" />
         </LinearLayout>
     </ScrollView>

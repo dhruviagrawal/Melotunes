@@ -22,12 +22,14 @@
         <entry key="app/src/main/res/drawable/ic_skip_next.xml" value="0.32037037037037036" />
         <entry key="app/src/main/res/drawable/ic_skip_previous.xml" value="0.32037037037037036" />
         <entry key="app/src/main/res/drawable/main_bg.xml" value="0.32037037037037036" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.20425724637681159" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_music.xml" value="0.27807971014492755" />
-        <entry key="app/src/main/res/layout/activity_offline_library.xml" value="0.19972826086956522" />
+        <entry key="app/src/main/res/layout/activity_offline_library.xml" value="0.30728874078064317" />
+        <entry key="app/src/main/res/layout/activity_online_library.xml" value="0.26313405797101447" />
         <entry key="app/src/main/res/layout/activity_player.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.26313405797101447" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.27807971014492755" />
         <entry key="app/src/main/res/layout/music_items.xml" value="0.27503242910639725" />
         <entry key="app/src/main/res/menu/popup.xml" value="0.2942708333333333" />
