@@ -1,18 +1,6 @@
 package com.example.melotunes;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-
 import android.Manifest;
-import android.app.FragmentBreadCrumbs;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -20,7 +8,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -81,7 +78,7 @@ public class OfflineLibrary extends AppCompatActivity {
         screenSlidePagerAdapter.addFragments(new DonateFragment(),"Donate");
         viewpager.setAdapter(screenSlidePagerAdapter);
         tabLayout.setupWithViewPager(viewpager);
-        
+
     }
     public static class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
         private ArrayList<Fragment>fragments;
@@ -90,7 +87,6 @@ public class OfflineLibrary extends AppCompatActivity {
             super(fm);
             this.fragments=new ArrayList<>();
             this.headings=new ArrayList<>();
-
         }
         void addFragments(Fragment fragment,String heading)
         {
