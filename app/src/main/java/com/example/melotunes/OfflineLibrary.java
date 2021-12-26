@@ -71,16 +71,17 @@ public class OfflineLibrary extends AppCompatActivity {
     }
 
     private void initViewPager() {
-        ViewPager viewpager=findViewById(R.id.viewpager);
+        ViewPager viewpager=findViewById(R.id.viewpager); //initialising the viewpager
         TabLayout tabLayout=findViewById(R.id.tabLayout);
         ScreenSlidePagerAdapter screenSlidePagerAdapter=new ScreenSlidePagerAdapter(getSupportFragmentManager());
         screenSlidePagerAdapter.addFragments(new HomeFragment(),"Home");
         screenSlidePagerAdapter.addFragments(new PlaylistFragment(),"Album");
         screenSlidePagerAdapter.addFragments(new DonateFragment(),"Donate");
         viewpager.setAdapter(screenSlidePagerAdapter);
-        tabLayout.setupWithViewPager(viewpager);
+        tabLayout.setupWithViewPager(viewpager); //set-up the tablayout and viewpager interaction
 
     }
+
     public static class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
         private ArrayList<Fragment>fragments;
         private ArrayList<String>headings;
@@ -94,12 +95,15 @@ public class OfflineLibrary extends AppCompatActivity {
             fragments.add(fragment);
             headings.add(heading);
         }
+
+        /*return fragment at index position*/
         @NonNull
         @Override
         public Fragment getItem(int position) {
             return fragments.get(position);
         }
 
+        /*return fragment size*/
         @Override
         public int getCount() {
             return fragments.size();
@@ -122,7 +126,10 @@ public class OfflineLibrary extends AppCompatActivity {
                 MediaStore.Audio.Media.TITLE,
                 MediaStore.Audio.Media.DURATION,
                 MediaStore.Audio.Media.DATA, //for path
-                MediaStore.Audio.Media.ARTIST //for path
+                MediaStore.Audio.Media.ARTIST,
+                MediaStore.Audio.Media._ID
+
+
 
         };
         Cursor cursor = context.getContentResolver().query(uri, projection,
@@ -136,8 +143,9 @@ public class OfflineLibrary extends AppCompatActivity {
                 String duration = cursor.getString(2);
                 String path = cursor.getString(3);
                 String artist  = cursor.getString(4);
+                String id = cursor.getString(5);
 
-                MusicFiles musicfiles  = new MusicFiles(path, title, artist, album, duration);
+                MusicFiles musicfiles  = new MusicFiles(path, title, artist, album, duration, id);
                 //take log e for check
                 Log.e("Path:" + path, "Album:" + album);
                 tempAudioList.add(musicfiles);

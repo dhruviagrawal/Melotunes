@@ -29,6 +29,11 @@ public class  HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
+        /* This view object
+         will be used
+         to find the IDs of
+         layout in fragment
+         */
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         if(!(musicFiles.size() < 1))

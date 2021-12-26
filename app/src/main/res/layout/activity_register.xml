@@ -8,11 +8,12 @@
     tools:context=".RegisterActivity">
 
     <LinearLayout
+        android:background="@drawable/main_bg"
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="729dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_height="730dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -24,10 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="125dp"
             android:layout_marginBottom="30sp"
-            android:background="#ADABE8"
             android:gravity="center"
             android:text="Create Account"
-            android:textColor="#121111"
+            android:textColor="@color/teal_200"
             android:textSize="48sp"
             android:textStyle="bold" />
 
@@ -40,6 +40,8 @@
             android:backgroundTint="#9C27B0"
             android:ems="10"
             android:gravity="center"
+            android:textColor="@color/white"
+            android:textColorHint="#BDB4B4"
             android:inputType="textPersonName"
             android:hint="@string/phone"
             android:textSize="24sp" />
@@ -52,6 +54,8 @@
             android:backgroundTint="#9D26B1"
             android:ems="10"
             android:gravity="center"
+            android:textColor="@color/white"
+            android:textColorHint="#BDB4B4"
             android:inputType="textPersonName"
             android:hint="@string/name"
             android:textSize="24sp" />
@@ -63,6 +67,8 @@
             android:layout_marginBottom="30sp"
             android:backgroundTint="#9C27B0"
             android:ems="10"
+            android:textColor="@color/white"
+            android:textColorHint="#BDB4B4"
             android:gravity="center"
             android:hint="@string/password"
             android:textSize="24sp"
@@ -74,6 +80,7 @@
             android:layout_height="96dp"
             android:layout_gravity="center"
             android:gravity="center"
+            android:backgroundTint="@color/teal_200"
             android:text="@string/register"
             android:textSize="34sp" />
     </LinearLayout>

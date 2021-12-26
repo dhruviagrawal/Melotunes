@@ -7,6 +7,7 @@
     tools:context=".Music">
 
     <ScrollView
+        android:background="@drawable/main_bg"
         android:id="@+id/scrollView4"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -29,6 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 android:gravity="center"
+                android:textColor="@color/teal_200"
                 android:text="@string/music"
                 android:textSize="48sp" />
 
@@ -36,6 +38,7 @@
                 android:id="@+id/offline"
                 android:layout_width="243dp"
                 android:layout_height="70dp"
+                android:backgroundTint="@color/teal_200"
                 android:text="@string/offline"
                 android:textSize="34sp" />
 
@@ -43,6 +46,7 @@
                 android:id="@+id/online"
                 android:layout_width="243dp"
                 android:layout_height="70dp"
+                android:backgroundTint="@color/teal_200"
                 android:text="@string/online"
                 android:textSize="34sp" />
         </LinearLayout>
