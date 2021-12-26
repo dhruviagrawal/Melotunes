@@ -10,7 +10,7 @@
     <string name="offline">Offline</string>
     <string name="online">Online</string>
     <string name="home">Home</string>
-    <string name="playlist">Playlist</string>
+    <string name="playlist">Album</string>
     <string name="donate">Donate</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -67,7 +67,7 @@ public class OnlineLibrary extends AppCompatActivity {
 
                }
                arrayAdapter=new ArrayAdapter<String>(OnlineLibrary.this, android.R.layout.simple_list_item_1,arrayListSongName);
-
+               listView.setAdapter(arrayAdapter);
 
             }
 

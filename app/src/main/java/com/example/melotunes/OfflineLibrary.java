@@ -28,6 +28,7 @@ public class OfflineLibrary extends AppCompatActivity {
     public static final int REQUEST_CODE = 1;
     static ArrayList<MusicFiles> musicFiles;
     static boolean shuffleBoolean = false, repeatBoolean = false;
+    static ArrayList<MusicFiles>albums=new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +75,7 @@ public class OfflineLibrary extends AppCompatActivity {
         TabLayout tabLayout=findViewById(R.id.tabLayout);
         ScreenSlidePagerAdapter screenSlidePagerAdapter=new ScreenSlidePagerAdapter(getSupportFragmentManager());
         screenSlidePagerAdapter.addFragments(new HomeFragment(),"Home");
-        screenSlidePagerAdapter.addFragments(new PlaylistFragment(),"Playlist");
+        screenSlidePagerAdapter.addFragments(new PlaylistFragment(),"Album");
         screenSlidePagerAdapter.addFragments(new DonateFragment(),"Donate");
         viewpager.setAdapter(screenSlidePagerAdapter);
         tabLayout.setupWithViewPager(viewpager);
@@ -113,6 +114,7 @@ public class OfflineLibrary extends AppCompatActivity {
 
     public static ArrayList<MusicFiles> getAllAudio(Context context)
     {
+        ArrayList<String>duplicate=new ArrayList<>();
         ArrayList<MusicFiles> tempAudioList = new ArrayList<>();
         Uri uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
         String[] projection = {
@@ -139,6 +141,12 @@ public class OfflineLibrary extends AppCompatActivity {
                 //take log e for check
                 Log.e("Path:" + path, "Album:" + album);
                 tempAudioList.add(musicfiles);
+                if(!duplicate.contains(album))
+                {
+                    albums.add(musicfiles);
+                    duplicate.add(album);
+                }
+
             }
             cursor.close();
         }

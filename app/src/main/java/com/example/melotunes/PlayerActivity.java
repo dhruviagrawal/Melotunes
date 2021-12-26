@@ -3,9 +3,8 @@ package com.example.melotunes;
 import static com.example.melotunes.OfflineLibrary.musicFiles;
 import static com.example.melotunes.OfflineLibrary.repeatBoolean;
 import static com.example.melotunes.OfflineLibrary.shuffleBoolean;
+import static com.example.melotunes.AlbumDetailsAdapter.albumFiles;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -15,6 +14,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -371,6 +372,11 @@ public class PlayerActivity extends AppCompatActivity {
 
     private void getIntentMethod() {
         position = getIntent().getIntExtra("position", -1);
+        String sender=getIntent().getStringExtra("sender");
+        if(sender!=null&&sender.equals("albumDetails")){
+            listSongs=albumFiles;
+        }
+        else
         listSongs = musicFiles;
         if(listSongs != null)
         {
