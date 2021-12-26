@@ -70,14 +70,14 @@ public class OfflineLibrary extends AppCompatActivity {
     }
 
     private void initViewPager() {
-        ViewPager viewpager=findViewById(R.id.viewpager);
+        ViewPager viewpager=findViewById(R.id.viewpager); //initialising the viewpager
         TabLayout tabLayout=findViewById(R.id.tabLayout);
         ScreenSlidePagerAdapter screenSlidePagerAdapter=new ScreenSlidePagerAdapter(getSupportFragmentManager());
         screenSlidePagerAdapter.addFragments(new HomeFragment(),"Home");
         screenSlidePagerAdapter.addFragments(new PlaylistFragment(),"Playlist");
         screenSlidePagerAdapter.addFragments(new DonateFragment(),"Donate");
         viewpager.setAdapter(screenSlidePagerAdapter);
-        tabLayout.setupWithViewPager(viewpager);
+        tabLayout.setupWithViewPager(viewpager); //set-up the tablayout and viewpager interaction
 
     }
 
@@ -94,12 +94,15 @@ public class OfflineLibrary extends AppCompatActivity {
             fragments.add(fragment);
             headings.add(heading);
         }
+
+        /*return fragment at index position*/
         @NonNull
         @Override
         public Fragment getItem(int position) {
             return fragments.get(position);
         }
 
+        /*return fragment size*/
         @Override
         public int getCount() {
             return fragments.size();

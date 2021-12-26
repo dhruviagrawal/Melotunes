@@ -13,7 +13,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
             app:tabIndicatorFullWidth="true"
+            app:tabTextColor="@color/colorAccent"
+            app:tabIndicatorHeight="50dp"
+            app:tabIndicatorColor="#009688"
+            app:tabIndicator="@drawable/tab_indicator"
             android:layout_marginBottom="3dp">
 
             <com.google.android.material.tabs.TabItem
