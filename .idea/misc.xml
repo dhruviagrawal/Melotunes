@@ -3,28 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_album_details.xml" value="0.14617486338797814" />
         <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_login.xml" value="0.20516304347826086" />
         <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_main.xml" value="0.1621376811594203" />
         <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_music.xml" value="0.20516304347826086" />
         <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_offline.xml" value="0.19972826086956522" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_offline_library.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_online_library.xml" value="0.152" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_player.xml" value="0.1" />
         <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_register.xml" value="0.12" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/album_item.xml" value="0.1" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/fragment_home.xml" value="0.19972826086956522" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/fragment_playlist.xml" value="0.19972826086956522" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/fragment_song.xml" value="0.19972826086956522" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/music_items.xml" value="0.14617486338797814" />
-        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/menu/menu_res.xml" value="0.15337837837837837" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/anushka/AndroidStudioProjects/Melotunes/app/src/main/res/layout/activity_online_library.xml" value="0.152" />
+        <entry key="app/src/main/res/drawable/gradient_bg.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_chevron_left.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_pause.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_play.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_repeat_off.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_repeat_on.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_shuffle_off.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_shuffle_on.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_skip_next.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/ic_skip_previous.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/drawable/main_bg.xml" value="0.32037037037037036" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.20425724637681159" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_music.xml" value="0.27807971014492755" />
+        <entry key="app/src/main/res/layout/activity_offline_library.xml" value="0.19972826086956522" />
+        <entry key="app/src/main/res/layout/activity_player.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.27807971014492755" />
+        <entry key="app/src/main/res/layout/music_items.xml" value="0.27503242910639725" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
